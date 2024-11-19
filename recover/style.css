@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* poderia ser display grid tbm */
+}
+.container .esquerda{
+    background-color: rgb(72, 2, 93);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* aprender a fazer gradiente de cores */
+}
+.container .direita{
+    width: 50%;
+    height: 100%;
+    background-color: #F9FAFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* extensão de cor do chrome: colorzero */
+    /* e fontes watchfont */
+}
+.topo{
+    text-align: center;
+}
+.container .direita .card{
+    background-color: white;
+    padding: 40px 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    /* largura minima */
+    min-width: 500px;
+
+    /* padding pode receber até 4 valores e é em sentido horário (cima)(direita)(baixo)(esquerda)*/
+}
+.container .direita .card .topo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.container .direita .card .topo h1{
+    color: rgb(72, 2, 93);
+    font-size: 30px;
+}
+.container .direita .card .topo p{
+    font-size: 14px;
+}
+.container .direita .card .meio{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 10px;
+}
+.container .direita .card .meio input{
+    padding: 12px 12px;
+    border-radius: 4px;
+    border: 1px solid #c2c2c2;
+    font-size: 16px;
+}
+.container .direita .card .meio input::placeholder{
+    color: #cecece;
+}
+.container .direita .card .fim{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.container .direita .fim button{
+    background-color: rgb(72, 2, 93);
+    color: white;
+    padding: 17px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 0;
+}
+.container .direita .fim a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
