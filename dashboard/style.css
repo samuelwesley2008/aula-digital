@@ -16,6 +16,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 5px 30px;
+    height: 10%;
 
 }
 
@@ -52,6 +53,199 @@ body{
 .container .topo .perfil img{
     border-radius: 50%;
 
+}
+
+.container .content{
+    display: flex;
+    width: 100%;
+    height: 90%;
+
+}
+
+.container .side-menu{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .side-menu .opcoes{
+    width: 100%;
+    height: auto;
+
+}
+
+.container .side-menu .opcoes .opcao{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #5a5a5a;
+    transition: all 300ms ease;
+
+}
+
+.container .side-menu .opcoes .opcao .icone{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .side-menu .opcoes .opcao span{
+    font-size: 12px;
+    font-weight: bold;
+    
+
+}
+
+#selected{
+    color: black;
+    border-left: 5px solid #2a42ca;
+
+}
+
+.container .side-menu button{
+    width: 70%;
+    height: 30px;
+    border: none;
+    background-color: #2a42ca;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+
+.container .side-menu .opcoes .opcao:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+
+}
+
+.container .side-menu .opcoes .opcao .conteudo{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container .side-menu .opcoes .opcao .conteudo{
+    font-size: 10px;
+}
+
+.container .side-menu button:hover{
+    color: #2a42ca;
+    border: 2px solid #2a42ca;
+    background-color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container .content .main-content{
+    width: 80%;
+    height: 100%;
+    background-color: #f5faff;
+    padding: 20px;
+}
+
+.container .content .main-content .banner{
+    width: 95%;
+    height: 40px;
+    background-color: #3c53d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.container .content .main-content .banner .star{
+    display: flex;
+    gap: 5px;
+    color: white;
+    align-items: center;
+    font-size: 12px;
+}
+
+.container .content .main-content .banner a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.container .content .main-content .cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.container .content .main-content .cards .card{
+    width: 23%;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    display: flex;
+}
+
+.container .content .main-content .cards .card .esquerda{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .main-content .cards .card .direita{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.container .content .main-content .cards .card .esquerda .icone{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: #64a91a;
+}
+
+#um .esquerda .icone{
+    background-color: #fdceaa;
+    color: #fd8a31;
+}
+
+#dois .esquerda .icone{
+    background-color: #64a91a;
+    color: #21c52e;
+
+}
+
+#tres .esqeurda .icone{
+    background-color: #1e8dcd;
+    color: #161fa0;
+}
+
+#quatro .esquerda .icone{
+    background-color: #18a4b7;
+    color: #1760b9;
 
 
 }
+
+
+
